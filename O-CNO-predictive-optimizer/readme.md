@@ -15,3 +15,10 @@ where:
 - services tree: file with "tree" of services
 - instance_file: defines "name" of instance
 - results_file: prefix of the files for results
+## Authors
+- Miguel Rocha mrocha@di.uminho.pt 
+- Truong Khoa Phan t.phan@ucl.ac.uk
+## Acknowledgements
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 761699. The dissemination of results herein reflects only the author’s view and the European Commission is not responsible for any use that may be made of the information it contains.
+## License
+This project is licensed under the Apache 2.0 License

@@ -1,0 +1,412 @@
+?SNDlib native format; type: solution; version: 1.0
+# solution sol2--nobel-germany--D-B-E-N-C-A-N-N
+
+# LINK CONFIGURATIONS
+#
+# <link_id> ( {<module_capacity> <install_count>}+ )
+
+LINK-CONFIGURATIONS (
+  L1 ( 20.00 1.00 )
+  L2 ( )
+  L3 ( 80.00 1.00 )
+  L4 ( )
+  L5 ( 40.00 1.00 )
+  L6 ( 40.00 1.00 )
+  L7 ( 20.00 1.00 )
+  L8 ( 40.00 1.00 )
+  L9 ( 40.00 1.00 )
+  L10 ( 20.00 1.00 )
+  L11 ( 40.00 1.00 )
+  L12 ( 80.00 1.00 )
+  L13 ( 40.00 1.00 )
+  L14 ( 120.00 1.00 )
+  L15 ( 40.00 1.00 )
+  L16 ( 40.00 1.00 )
+  L17 ( 120.00 1.00 )
+  L18 ( 40.00 1.00 )
+  L19 ( 40.00 1.00 )
+  L20 ( 20.00 1.00 )
+  L21 ( 20.00 1.00 )
+  L22 ( 80.00 1.00 )
+  L23 ( 40.00 1.00 )
+  L24 ( 20.00 1.00 )
+  L25 ( 120.00 1.00 )
+  L26 ( 80.00 1.00 )
+)
+
+# ROUTING
+#
+# <demand_id> ( {<flow_path_value> ( <link_id>+ )}+ )
+
+ROUTINGS NOS ( 
+  DuesseldorfNuernberg (
+    4.00 ( L12 L14 L17 )
+  )
+  EssenStuttgart (
+    4.00 ( L11 L12 L14 L17 L25 )
+  )
+  BerlinKoeln (
+    4.00 ( L3 L15 L14 )
+  )
+  StuttgartUlm (
+    8.00 ( L26 )
+  )
+  HannoverKoeln (
+    6.00 ( L13 L14 )
+  )
+  HamburgMuenchen (
+    4.00 ( L18 L13 L17 L23 )
+  )
+  NuernbergUlm (
+    4.00 ( L25 L26 )
+  )
+  DuesseldorfMannheim (
+    2.00 ( L12 L14 L16 )
+  )
+  DuesseldorfEssen (
+    10.00 ( L11 )
+  )
+  HannoverMannheim (
+    4.00 ( L13 L16 )
+  )
+  BerlinDortmund (
+    4.00 ( L1 L18 L8 )
+  )
+  FrankfurtHannover (
+    14.00 ( L13 )
+  )
+  DortmundMuenchen (
+    4.00 ( L9 L14 L17 L23 )
+  )
+  BerlinFrankfurt (
+    12.00 ( L3 L15 )
+  )
+  KoelnMannheim (
+    2.00 ( L14 L16 )
+  )
+  BerlinNuernberg (
+    4.00 ( L3 L22 )
+  )
+  LeipzigStuttgart (
+    8.00 ( L22 L25 )
+  )
+  MannheimUlm (
+    2.00 ( L20 L21 L26 )
+  )
+  KarlsruheKoeln (
+    2.00 ( L20 L16 L14 )
+  )
+  HannoverUlm (
+    4.00 ( L19 L22 L25 L26 )
+  )
+  EssenKarlsruhe (
+    2.00 ( L11 L12 L14 L17 L25 L21 )
+  )
+  DortmundHannover (
+    6.00 ( L8 )
+  )
+  KarlsruheUlm (
+    2.00 ( L21 L26 )
+  )
+  EssenLeipzig (
+    4.00 ( L11 L12 L14 L17 L22 )
+  )
+  HamburgLeipzig (
+    8.00 ( L1 L3 )
+  )
+  BerlinMuenchen (
+    4.00 ( L3 L22 L23 )
+  )
+  BerlinUlm (
+    4.00 ( L3 L22 L25 L26 )
+  )
+  DortmundStuttgart (
+    4.00 ( L9 L14 L17 L25 )
+  )
+  KarlsruheMuenchen (
+    2.00 ( L21 L26 L24 )
+  )
+  KarlsruheMannheim (
+    2.00 ( L20 )
+  )
+  EssenFrankfurt (
+    8.00 ( L11 L12 L14 )
+  )
+  DuesseldorfHannover (
+    6.00 ( L11 L7 L8 )
+  )
+  HannoverStuttgart (
+    6.00 ( L19 L22 L25 )
+  )
+  DortmundUlm (
+    2.00 ( L9 L14 L17 L25 L26 )
+  )
+  KarlsruheStuttgart (
+    4.00 ( L21 )
+  )
+  DortmundEssen (
+    8.00 ( L7 )
+  )
+  HamburgNuernberg (
+    4.00 ( L18 L8 L9 L14 L17 )
+  )
+  DortmundHamburg (
+    4.00 ( L8 L18 )
+  )
+  LeipzigNuernberg (
+    6.00 ( L22 )
+  )
+  DuesseldorfLeipzig (
+    4.00 ( L12 L14 L15 )
+    2.00 ( L12 L14 L17 L22 )
+  )
+  FrankfurtNuernberg (
+    10.00 ( L17 )
+  )
+  DuesseldorfKoeln (
+    12.00 ( L12 )
+  )
+  BerlinLeipzig (
+    14.00 ( L3 )
+  )
+  DortmundLeipzig (
+    6.00 ( L8 L19 )
+  )
+  KoelnLeipzig (
+    6.00 ( L14 L15 )
+  )
+  BerlinMannheim (
+    2.00 ( L3 L15 L16 )
+  )
+  BremenKoeln (
+    2.00 ( L5 L13 L14 )
+  )
+  FrankfurtHamburg (
+    6.00 ( L14 L9 L8 L18 )
+    6.00 ( L13 L18 )
+  )
+  BremenEssen (
+    2.00 ( L6 L10 L7 )
+  )
+  DuesseldorfStuttgart (
+    4.00 ( L12 L14 L17 L25 )
+  )
+  HannoverMuenchen (
+    4.00 ( L13 L17 L23 )
+  )
+  DuesseldorfKarlsruhe (
+    2.00 ( L12 L14 L16 L20 )
+  )
+  BremenDuesseldorf (
+    2.00 ( L5 L13 L14 L12 )
+  )
+  EssenHannover (
+    4.00 ( L7 L8 )
+  )
+  BerlinEssen (
+    4.00 ( L3 L15 L14 L12 L11 )
+  )
+  HamburgUlm (
+    4.00 ( L1 L3 L22 L25 L26 )
+  )
+  BerlinBremen (
+    4.00 ( L1 L18 L5 )
+  )
+  DortmundDuesseldorf (
+    8.00 ( L7 L11 )
+  )
+  BremenKarlsruhe (
+    2.00 ( L5 L13 L16 L20 )
+  )
+  KarlsruheLeipzig (
+    2.00 ( L20 L16 L15 )
+  )
+  BerlinDuesseldorf (
+    4.00 ( L3 L15 L14 L12 )
+  )
+  EssenMannheim (
+    2.00 ( L11 L12 L14 L16 )
+  )
+  MuenchenStuttgart (
+    6.00 ( L24 L26 )
+  )
+  DuesseldorfUlm (
+    2.00 ( L12 L14 L17 L25 L26 )
+  )
+  BremenUlm (
+    2.00 ( L5 L19 L22 L25 L26 )
+  )
+  KoelnMuenchen (
+    4.00 ( L14 L17 L25 L26 L24 )
+  )
+  LeipzigUlm (
+    6.00 ( L22 L25 L26 )
+  )
+  EssenUlm (
+    2.00 ( L11 L12 L14 L17 L25 L26 )
+  )
+  BremenNuernberg (
+    2.00 ( L5 L19 L22 )
+  )
+  BremenHannover (
+    6.00 ( L5 )
+  )
+  KoelnUlm (
+    4.00 ( L14 L17 L25 L26 )
+  )
+  MannheimMuenchen (
+    2.00 ( L20 L21 L26 L24 )
+  )
+  MuenchenNuernberg (
+    6.00 ( L23 )
+  )
+  HamburgKoeln (
+    4.00 ( L18 L8 L9 )
+  )
+  HamburgStuttgart (
+    4.00 ( L1 L3 L22 L25 )
+  )
+  HamburgKarlsruhe (
+    2.00 ( L18 L13 L17 L25 L21 )
+  )
+  BremenDortmund (
+    2.00 ( L5 L8 )
+  )
+  BremenFrankfurt (
+    6.00 ( L5 L13 )
+  )
+  FrankfurtNorden (
+    20.00 ( L13 L5 L6 )
+    10.00 ( L15 L19 L5 L6 )
+    20.00 ( L14 L9 L10 )
+  )
+  MannheimStuttgart (
+    4.00 ( L20 L21 )
+  )
+  DortmundMannheim (
+    2.00 ( L9 L14 L16 )
+  )
+  BerlinHamburg (
+    8.00 ( L1 )
+  )
+  FrankfurtLeipzig (
+    18.00 ( L15 )
+  )
+  HannoverLeipzig (
+    10.00 ( L19 )
+  )
+  FrankfurtStuttgart (
+    14.00 ( L17 L25 )
+  )
+  KoelnNuernberg (
+    4.00 ( L14 L17 )
+  )
+  HannoverNuernberg (
+    2.00 ( L13 L17 )
+    2.00 ( L19 L22 )
+  )
+  MuenchenUlm (
+    6.00 ( L24 )
+  )
+  MannheimNuernberg (
+    2.00 ( L16 L17 )
+  )
+  FrankfurtMannheim (
+    10.00 ( L16 )
+  )
+  KoelnStuttgart (
+    4.00 ( L14 L17 L25 )
+  )
+  KarlsruheNuernberg (
+    2.00 ( L21 L26 L24 L23 )
+  )
+  BerlinHannover (
+    4.00 ( L1 L18 )
+    4.00 ( L3 L19 )
+  )
+  HamburgHannover (
+    10.00 ( L18 )
+  )
+  DortmundNuernberg (
+    2.00 ( L9 L14 L17 )
+  )
+  BremenMannheim (
+    2.00 ( L5 L13 L16 )
+  )
+  EssenKoeln (
+    6.00 ( L11 L12 )
+  )
+  BremenHamburg (
+    6.00 ( L5 L18 )
+  )
+  DortmundFrankfurt (
+    10.00 ( L9 L14 )
+  )
+  DortmundKarlsruhe (
+    2.00 ( L9 L14 L16 L20 )
+  )
+  BremenMuenchen (
+    2.00 ( L5 L19 L22 L23 )
+  )
+  BremenLeipzig (
+    4.00 ( L5 L19 )
+  )
+  LeipzigMannheim (
+    4.00 ( L22 L25 L21 L20 )
+  )
+  NuernbergStuttgart (
+    6.00 ( L25 )
+  )
+  HamburgMannheim (
+    2.00 ( L18 L13 L16 )
+  )
+  DortmundKoeln (
+    6.00 ( L9 )
+  )
+  FrankfurtKoeln (
+    12.00 ( L14 )
+  )
+  BerlinKarlsruhe (
+    2.00 ( L3 L22 L25 L21 )
+  )
+  EssenMuenchen (
+    2.00 ( L11 L12 L14 L17 L23 )
+  )
+  BerlinStuttgart (
+    6.00 ( L3 L22 L25 )
+  )
+  FrankfurtUlm (
+    8.00 ( L17 L25 L26 )
+  )
+  DuesseldorfHamburg (
+    4.00 ( L11 L7 L8 L18 )
+  )
+  BremenStuttgart (
+    2.00 ( L5 L19 L22 L25 )
+  )
+  FrankfurtMuenchen (
+    10.00 ( L17 L23 )
+  )
+  DuesseldorfMuenchen (
+    4.00 ( L12 L14 L17 L23 )
+  )
+  EssenNuernberg (
+    2.00 ( L11 L12 L14 L17 )
+  )
+  EssenHamburg (
+    4.00 ( L7 L8 L18 )
+  )
+  FrankfurtKarlsruhe (
+    4.00 ( L16 L20 )
+  )
+  LeipzigMuenchen (
+    6.00 ( L22 L23 )
+    2.00 ( L22 L25 L26 L24 )
+  )
+  DuesseldorfFrankfurt (
+    12.00 ( L12 L14 )
+  )
+  HannoverKarlsruhe (
+    2.00 ( L13 L16 L20 )
+  )
+)
